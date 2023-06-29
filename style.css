@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: local('Bookman Old Style'),
+         url('fonts/Bookman_Old_Style.ttf') format('ttf');
+}
+
+*{margin: 0; padding: 0;}
+body{background: #F6DAFB;}
+.container{max-width: 1300px; margin: 0 auto;}
+.header_nav, .about_block, .courses, .footer_block{display: flex; justify-content: space-between; align-items: center; padding: 30px 0; flex-wrap: wrap;}
+.header_nav_logo{
+    width: 75px; 
+    height: 75px;
+    object-fit: cover;
+    padding: 5px;
+    background: linear-gradient(45deg, #FFAE00 , #DE00AD);
+    border-radius: 50%;
+}
+.header_nav_title{
+    font-family: 'Bookman Old Style';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.about{background: linear-gradient(172.1deg, #B48BCA 0.43%, rgba(255, 138, 252, 0) 151.47%);}
+.about_block{padding: 41px 0 60px 0; justify-content: space-around; align-items: start;}
+.about_block_person, .about_block_works{width: 40%;}
+.about_block_person_info{
+    position: relative;
+    background: url('/img/avatar.png') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    border-radius: 60px 0px 60px 0px;
+    margin-bottom: 10px;
+}
+.about_block_person_info_name{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(203 166 219);
+    padding: 15px 30px 15px 15px;
+    font-family: "Bookman Old Style";
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 40px;
+    border-radius: 0 90px 0 0;
+}
+.about_block_person_text{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+}
+.about_block_works_title{
+    font-family: 'Bookman Old Style';
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.works .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    
+}
+.bx-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 60px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a { background: #7E678B;}
+.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item { vertical-align: middle;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #7E678B;
+    width: 12px;
+    height: 12px;
+}
+.courses{ align-items: start; margin-bottom: 100px;}
+.course_block{width: 31%;}
+.mb_title{margin-bottom: 75px;}
+.course_title{
+    font-family: 'Bookman Old Style';
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.course_descript{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #7E678B;
+    margin-bottom: 50px;
+}
+.course_for_name{
+    font-family: 'Bookman Old Style';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #2E2931;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.course_for_list{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    color: #7E678B;
+    margin-bottom: 40px;
+}
+.course_for_list_item::marker{font-size: 14px; margin-left: 10px;}
+.underline{text-decoration: underline;}
+.outline{text-decoration: overline;}
+.price, .price_count{
+    font-family: 'Bookman Old Style';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;
+    color: #2E2931;
+    text-transform: uppercase;
+}
+.price_count{
+    font-size: 40px;
+    line-height: 47px;
+}
+.procent{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    color: #7E678B;
+    margin-bottom: 60px;
+}
+.book_link{
+    background: #B48BCA;
+    border-radius: 0 60px;
+    padding: 40px 20px;
+    font-family: 'Bookman Old Style';
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    color: #2E2931;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 60px;
+}
+.footer{
+    background: #CB8CB1;
+}
+.footer_contact{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: right;
+}
+
+@media (max-width:1280px){
+    .container{max-width: 1150px;}
+    .about_block {justify-content: space-between;}
+}
+
+@media (max-width:1080px){
+    .container{max-width: 955px;}
+    .about_block_person, .about_block_works { width: 44%;}
+    .courses{justify-content: space-around;}
+    .course_block { width: 45%; }
+    .studworks .bx-wrapper .bx-viewport{height: 340px !important;}
+    .studworks .bx-wrapper .bx-viewport ul li{width: 430px !important;}
+    .book_link{margin-left: 80px;}
+    .mt_title{margin-top: 70px;}
+}
+
+@media (max-width:800px){
+    .container{max-width: 688px;}
+    .courses { margin-bottom: 15px; }
+    .about_block_person, .about_block_works, .course_block { width: 100%;}
+    .about_block_person{ margin-bottom: 55px;}
+    .about_block_person_info { height: 550px;}
+    .about_block_person_info_name { padding: 32px 50px 32px 32px;}
+    .course_for_list {  margin-bottom: 30px;    margin-left: 30px;}
+    .studworks .bx-wrapper .bx-viewport{height: 525px !important;}
+    .studworks .bx-wrapper .bx-viewport ul li { width: 688px !important; }
+    .course_descript {font-size: 28px;    line-height: 45px;   margin-bottom: 35px;}
+    .procent {  margin-bottom: 15px;}
+    .book_link {
+        margin: 0 auto;
+        width: 215px;
+        display: block;
+        margin-bottom: 50px;
+        padding: 30px 45px;
+        font-size: 30px;
+    }
+    .course_title { font-size: 45px;   line-height: 60px;}
+    .mb_title {   margin-bottom: 40px; }
+    .mt_title { margin-top: 0;  }
+}
+@media (max-width:500px){
+    .container{max-width: 370px;}
+    .studworks .bx-wrapper .bx-viewport{height: 285px !important;}
+    .studworks .bx-wrapper .bx-viewport ul li { width: 370px !important; }
+    .about_block_person_info_name { padding: 15px 0px 15px 20px;  max-width: 276px; }
+    .course_title {  font-size: 43px;  line-height: 56px; }
+    .courses { padding-top: 100px; }
+}
+
+@media (max-width:400px){
+    .container{max-width: 340px;}
+    .about_block_person_info { height: 400px; }
+    .about_block_person_info_name { background: rgb(198 160 215);}
+    .course_title {   font-size: 36px;  }
+    .studworks .bx-wrapper .bx-viewport{height: 265px !important;}
+    .studworks .bx-wrapper .bx-viewport ul li { width: 340px !important; }
+}
