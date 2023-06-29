@@ -30,7 +30,7 @@ body{background: #F6DAFB;}
 .about_block_person, .about_block_works{width: 40%;}
 .about_block_person_info{
     position: relative;
-    background: url('/img/avatar.png') no-repeat top center;
+    background: url('img/avatar.png') no-repeat top center;
     background-size: cover;
     width: 100%;
     height: 450px;
